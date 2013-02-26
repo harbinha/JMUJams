@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author Ryan Pitts
+ * @author Hunter Harbin, Ryan Pitts
  */
 public class DeleteAccountServlet extends HttpServlet {
 
