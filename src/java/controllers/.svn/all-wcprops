@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/cs347/team05/!svn/ver/678/JMUJams/src/java/controllers
+END
+LoginServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/cs347/team05/!svn/ver/615/JMUJams/src/java/controllers/LoginServlet.java
+END
+LogoutServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/cs347/team05/!svn/ver/573/JMUJams/src/java/controllers/LogoutServlet.java
+END
+JamsServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/cs347/team05/!svn/ver/678/JMUJams/src/java/controllers/JamsServlet.java
+END
+ForgotPasswordServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/cs347/team05/!svn/ver/664/JMUJams/src/java/controllers/ForgotPasswordServlet.java
+END
+UpdateProfileServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/cs347/team05/!svn/ver/649/JMUJams/src/java/controllers/UpdateProfileServlet.java
+END
+CreateAccountServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/cs347/team05/!svn/ver/615/JMUJams/src/java/controllers/CreateAccountServlet.java
+END
+DeleteAccountServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/cs347/team05/!svn/ver/615/JMUJams/src/java/controllers/DeleteAccountServlet.java
+END
+SettingsServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/cs347/team05/!svn/ver/649/JMUJams/src/java/controllers/SettingsServlet.java
+END

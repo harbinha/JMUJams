@@ -1,0 +1,22 @@
+<!DOCTYPE html 
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css"/>
+        <title>Account Deleted</title>
+    </head>
+    <body>
+        <div id="mainContainer">
+    <!-- EDIT THIS -->
+	<div id="index_content">
+	  <div id="deleteAccount">
+              <b>Account Deleted. Please 
+                  join us again soon!</b><br />
+              <br />
+              <a href="index.jsp" style="font-size:50%; margin-left:5px">Back to Home Page</a>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	
+            <style type="text/css">
+            .errmsg { color: red; }
+              </style>
+       
+         <title>JMUJams</title>
+        
+        <script type="text/Javascript">
+             // validate form data
+      function validateForm() {
+        var valid = true;
+           
+        //ensuring fields aren't blank
+          var pass1 = get('pass1').value;
+          var pass2 = get('pass2').value;
+          var prefName = get('prefName').value;
+          var email  = get('email').value;
+          var userName = get('userName').value;
+          
+          //making sure all forms entries are filled
+          if(userName == null || userName ==""){
+              alert("User Name name must be provided");
+              valid = false;
+          }
+          if(prefName == null || prefName ==""){
+              alert("Preferred name must be provided");
+              valid = false;
+          }
+
+          if(pass1.length < 6){
+              alert("Password must be longer than six characters");
+              valid = false;
+          }
+          if(pass1 != pass2){
+              alert("Passwords must match");
+              valid = false;
+          }
+          
+          //SQL Injection Prevention
+          if(! /^[\-a-zA-Z0-9]*$/.test(userName)){
+              alert("First name can only contain a-z, A-Z, 0-9, and hyphen");
+              valid = false;
+          }
+          if(! /^[\-a-zA-Z0-9]*$/.test(prefName)){
+              alert("First name can only contain a-z, A-Z, 0-9, and hyphen");
+              valid = false;
+          }
+          if(! /^[\-a-zA-Z0-9@.]*$/.test(email)){
+              alert("Invalid Email");
+              valid = false;
+          }
+         
+          return valid;
+      }
+
+      // shortcut for accessing DOM elements by id
+      function get(id) { return document.getElementById(id) }
+    </script>
+        
+</head>
+<body>
+<div id="mainContainer">
+    <!-- EDIT THIS -->
+	<div id="index_content">
+	   <div id="createAccount">
+		<h3>Create Account</h3>
+<br />
+		<form name="entryform" action="createaccount"
+          method="post" onsubmit="return validateForm()">
+                                                            
+		Please enter preferred name: <br />     <input type="text" id="prefName" name="prefName" size="30">
+                                                          <br />
+                                                          
+                Please enter user name: <br />          <input type="text" id="userName" name="userName" size="30">
+                                                          <br />                                          
+                                                            
+		Create a password: <br />               <input type="password" id="pass1" name="pass1" size="30">
+                                                           <br />
+                                                            
+		Re-type password:  <br />               <input type="password" id="pass2" name="pass2" size="30">
+                                                           <br />
+                                                            
+		Please enter e-mail: <br />             <input type="text" id="email" name="email" size="30">
+                                                            <br />
+                                                            
+		Please select your preferred genre: 	<select name="genre" id="genre">
+                                                            <option>Country</option>
+                                                            <option selected="selected">Electronic</option>
+                                                            <option>Hip-Hop</option>
+                                                            <option>Pop</option>
+                                                            <option>Rock</option>
+							</select> <br />
+                                                        
+                Do you prefer your songlist to shuffle? <label><input type="checkbox" checked="checked" id="shuffle" name="shuffle"/>Yes, please shuffle.</label>                                       
+		<br />
+		<input type="submit" id="createaccount" name="createaccount" value="Create Account">
+                <input type="button" value="Cancel" onClick="parent.location='index.jsp'">
+		</form>
+            </div>
+        </div>
+</div>
+</body>
+</html>
