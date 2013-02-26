@@ -20,7 +20,7 @@ public class DeleteAccountServlet extends HttpServlet {
 
      /**
      * Handles the HTTP
-     * <code>POST</code> method.
+     * POST method.
      *
      * @param request servlet request
      * @param response servlet response
