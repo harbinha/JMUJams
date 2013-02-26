@@ -2,7 +2,7 @@ package beans;
 
 /**
  *
- * @author Ryan Pitts
+ * @author Hunter Harbin, Ryan Pitts
  */
 public class UserBean {
     
